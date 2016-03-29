@@ -9,9 +9,35 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="icon" type="image/svg+xml" sizes="any" href="nr-b.svg"/>
     <link rel="mask-icon" type="image/svg" sizes="any" href="nr-b.svg"/>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script> $(document).ready(function() {
+
+$('body').css('display', 'none');
+
+$('body').fadeIn(1000);
+
+
+
+$('.link').click(function() {
+
+event.preventDefault();
+
+newLocation = this.href;
+
+$('body').fadeOut(1000, newpage);
+
+});
+
+function newpage() {
+
+window.location = newLocation;
+
+}
+
+});</script>
   </head>
   <body>
-    <section class="page-header">
+    <section class="page-header">    
       <a href="mailto:nicolas.raux@gmail.com" title="Contact Me">
       <img class="project-logo" src="nr.svg" height="140px">
       <h1 class="project-name">UX Designer</h1>
